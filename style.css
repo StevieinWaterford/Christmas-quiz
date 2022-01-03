@@ -1,0 +1,112 @@
+*, 
+*::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded;
+  }
+
+  body {
+      background: url(../images/pexels.jpg);
+      background-size: cover;
+      background-position: center center;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      width: 100vw;
+      height: 100vh;   
+      justify-content: center;
+      align-items: center;
+  }
+
+  .container, .results-area, .questions
+  {
+      width: 500px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px 4px;
+      text-align: center;
+  }
+
+  .container {
+      max-width: 80%;
+      background-color: brown;
+      padding: 10px;
+  }
+
+#topics {
+  background: lightblue;
+  margin-bottom: 30px;
+}
+
+#topics .nav {
+      list-style-type: none;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+}
+
+#topics .nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+  .results-area, .questions {
+      max-width: 100%;
+      color: black;
+      font-size: 1rem;
+  }
+
+  .results-area {
+      background-color: cornflowerblue;
+      padding: 1px;
+  
+  }
+
+.geog {
+  color: green;
+  cursor: pointer;
+}
+
+.geogbg {
+    background-color: green;
+}
+
+.hist {
+  color: blue;
+  cursor: pointer;
+}
+
+.histbg {
+    background-color: #34ebe1;
+  }
+
+.sport {
+  color: orangered;
+  cursor: pointer;
+}
+  .sportbg {
+    background-color: orangered;
+  }
+
+#hist-quiz, #sport-quiz {
+  display: none;
+}
+
+
+.blue-button {
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  color: blue;
+  font-size: 1.2rem;
+    
+}
+
+.blue-button:hover {
+    transform: scale(1.4);
+    border-radius: 1.5rem;
+}
