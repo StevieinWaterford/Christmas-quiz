@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPERQUIZ</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="topics">
+            <ul class="nav">
+                <li class="geog underline">Geography</li>
+                <li class="hist">History</li>
+                <li class="sport">Sport</li>
+            </ul>
+        </div>
+
+        <div class="results-area">
+            <p>You are <span class="displayPercentage">0</span> % correct</p>
+        </div>
+
+        <form id="geog-quiz">
+            <div class="questions geogbg">
+                <p>1.What is the capital of France?</p>
+                <P>
+                    <input type="radio" name="q1" value="a" />
+                    <label>Marseille</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q1" value="b" />
+                    <label>Paris</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q1" value="c" />
+                    <label>London</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q1" value="d" />
+                    <label>Dublin</label>
+                </P>
+            </div>
+            <div class="questions geogbg">
+                <p>2.What is the capital of Germany?</p>
+                <P>
+                    <input type="radio" name="q2" value="a" />
+                    <label>Berlin</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q2" value="b" />
+                    <label>Rome</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q2" value="c" />
+                    <label>Munich</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q2" value="d" />
+                    <label>Frankfurt</label>
+                </P>
+            </div>
+            <div class="questions geogbg">
+                <p>3.What is biggest city in the world?</p>
+                <P>
+                    <input type="radio" name="q3" value="a" />
+                    <label>Tokyo</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q3" value="b" />
+                    <label>New York</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q3" value="c" />
+                    <label>Beijing</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q3" value="d" />
+                    <label>Hong Kong</label>
+                </P>
+            </div>
+
+            <div class="questions geogbg">
+                <p>4.What is the worlds highest mountain?</p>
+                <P>
+                    <input type="radio" name="q4" value="a" />
+                    <label>K2</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q4" value="b" />
+                    <label>Mt Blanc</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q4" value="c" />
+                    <label>Elbrus</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q4" value="d" />
+                    <label>Mt Everest</label>
+                </P>
+            </div>
+        </form>
+
+        <form id="hist-quiz">
+            <div class="questions histbg">
+                <p>1.When did World War 2 start</p>
+                <P>
+                    <input type="radio" name="q1" value="a" />
+                    <label>1914</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q1" value="b" />
+                    <label>1939</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q1" value="c" />
+                    <label>1945</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q1" value="d" />
+                    <label>2000</label>
+                </P>
+            </div>
+            <div class="questions histbg">
+                <p>2.Who was the German leader in World War 2?</p>
+                <P>
+                    <input type="radio" name="q2" value="a" />
+                    <label>Adolf Hitler</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q2" value="b" />
+                    <label>Joseph Stalin</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q2" value="c" />
+                    <label>Larry Grayson</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q2" value="d" />
+                    <label>Benito Mussolini</label>
+                </P>
+            </div>
+            <div class="questions histbg">
+                <p>3.What was the longest was in history?</p>
+                <P>
+                    <input type="radio" name="q3" value="a" />
+                    <label>Ottoman wars in Europe</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q3" value="b" />
+                    <label>Arab-Byzantine wars</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q3" value="c" />
+                    <label>Reconquista</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q3" value="d" />
+                    <label>Roman-Persian wars</label>
+                </P>
+            </div>
+
+            <div class="questions histbg">
+                <p>4.Where was Daniel O'Connell born?</p>
+                <P>
+                    <input type="radio" name="q4" value="a" />
+                    <label>Cork</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q4" value="b" />
+                    <label>Kerry</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q4" value="c" />
+                    <label>Limerick</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q4" value="d" />
+                    <label>Clare</label>
+                </P>
+            </div>
+        </form>
+
+        <form id="sport-quiz">
+            <div class="questions sportbg">
+                <p>1.Who won the European Football Championship in 2021</p>
+                <P>
+                    <input type="radio" name="q1" value="a" />
+                    <label>Malta</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q1" value="b" />
+                    <label>Scotland</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q1" value="c" />
+                    <label>Italy</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q1" value="d" />
+                    <label>England</label>
+                </P>
+            </div>
+            <div class="questions sportbg">
+                <p>2.Where were the 2020 Olympic Games held?</p>
+                <P>
+                    <input type="radio" name="q2" value="a" />
+                    <label>Japan</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q2" value="b" />
+                    <label>Australia</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q2" value="c" />
+
+                    <label>America</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q2" value="d" />
+                    <label>Spain</label>
+                </P>
+            </div>
+            <div class="questions sportbg">
+                <p>3.Who are the current All Ireland Hurling Champions</p>
+                <P>
+                    <input type="radio" name="q3" value="a" />
+                    <label>Limerick</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q3" value="b" />
+                    <label>Waterford</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q3" value="c" />
+                    <label>Cork</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q3" value="d" />
+                    <label>Wexford</label>
+                </P>
+            </div>
+
+            <div class="questions sportbg">
+                <p>4.What is the highest score in darts?</p>
+                <P>
+                    <input type="radio" name="q4" value="a" />
+                    <label>164</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q4" value="b" />
+                    <label>170</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q4" value="c" />
+                    <label>180</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q4" value="d" />
+                    <label>190</label>
+                </P>
+            </div>
+        </form>
+        <button type="submit" class="blue-button">Submit</button>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPERQUIZ</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="topics">
+            <ul class="nav">
+                <li class="geog underline">Geography</li>
+                <li class="hist">History</li>
+                <li class="sport">Sport</li>
+            </ul>
+        </div>
+
+        <div class="results-area">
+            <p>You are <span class="displayPercentage">0</span> % correct</p>
+        </div>
+
+        <form id="geog-quiz">
+            <div class="questions geogbg">
+                <p>1.What is the capital of France?</p>
+                <P>
+                    <input type="radio" name="q1" value="a" />
+                    <label>Marseille</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q1" value="b" />
+                    <label>Paris</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q1" value="c" />
+                    <label>London</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q1" value="d" />
+                    <label>Dublin</label>
+                </P>
+            </div>
+            <div class="questions geogbg">
+                <p>2.What is the capital of Germany?</p>
+                <P>
+                    <input type="radio" name="q2" value="a" />
+                    <label>Berlin</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q2" value="b" />
+                    <label>Rome</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q2" value="c" />
+                    <label>Munich</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q2" value="d" />
+                    <label>Frankfurt</label>
+                </P>
+            </div>
+            <div class="questions geogbg">
+                <p>3.What is biggest city in the world?</p>
+                <P>
+                    <input type="radio" name="q3" value="a" />
+                    <label>Tokyo</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q3" value="b" />
+                    <label>New York</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q3" value="c" />
+                    <label>Beijing</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q3" value="d" />
+                    <label>Hong Kong</label>
+                </P>
+            </div>
+
+            <div class="questions geogbg">
+                <p>4.What is the worlds highest mountain?</p>
+                <P>
+                    <input type="radio" name="q4" value="a" />
+                    <label>K2</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q4" value="b" />
+                    <label>Mt Blanc</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q4" value="c" />
+                    <label>Elbrus</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q4" value="d" />
+                    <label>Mt Everest</label>
+                </P>
+            </div>
+        </form>
+
+        <form id="hist-quiz">
+            <div class="questions histbg">
+                <p>1.When did World War 2 start</p>
+                <P>
+                    <input type="radio" name="q1" value="a" />
+                    <label>1914</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q1" value="b" />
+                    <label>1939</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q1" value="c" />
+                    <label>1945</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q1" value="d" />
+                    <label>2000</label>
+                </P>
+            </div>
+            <div class="questions histbg">
+                <p>2.Who was the German leader in World War 2?</p>
+                <P>
+                    <input type="radio" name="q2" value="a" />
+                    <label>Adolf Hitler</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q2" value="b" />
+                    <label>Joseph Stalin</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q2" value="c" />
+                    <label>Larry Grayson</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q2" value="d" />
+                    <label>Benito Mussolini</label>
+                </P>
+            </div>
+            <div class="questions histbg">
+                <p>3.What was the longest was in history?</p>
+                <P>
+                    <input type="radio" name="q3" value="a" />
+                    <label>Ottoman wars in Europe</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q3" value="b" />
+                    <label>Arab-Byzantine wars</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q3" value="c" />
+                    <label>Reconquista</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q3" value="d" />
+                    <label>Roman-Persian wars</label>
+                </P>
+            </div>
+
+            <div class="questions histbg">
+                <p>4.Where was Daniel O'Connell born?</p>
+                <P>
+                    <input type="radio" name="q4" value="a" />
+                    <label>Cork</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q4" value="b" />
+                    <label>Kerry</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q4" value="c" />
+                    <label>Limerick</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q4" value="d" />
+                    <label>Clare</label>
+                </P>
+            </div>
+        </form>
+
+        <form id="sport-quiz">
+            <div class="questions sportbg">
+                <p>1.Who won the European Football Championship in 2021</p>
+                <P>
+                    <input type="radio" name="q1" value="a" />
+                    <label>Malta</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q1" value="b" />
+                    <label>Scotland</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q1" value="c" />
+                    <label>Italy</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q1" value="d" />
+                    <label>England</label>
+                </P>
+            </div>
+            <div class="questions sportbg">
+                <p>2.Where were the 2020 Olympic Games held?</p>
+                <P>
+                    <input type="radio" name="q2" value="a" />
+                    <label>Japan</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q2" value="b" />
+                    <label>Australia</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q2" value="c" />
+
+                    <label>America</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q2" value="d" />
+                    <label>Spain</label>
+                </P>
+            </div>
+            <div class="questions sportbg">
+                <p>3.Who are the current All Ireland Hurling Champions</p>
+                <P>
+                    <input type="radio" name="q3" value="a" />
+                    <label>Limerick</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q3" value="b" />
+                    <label>Waterford</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q3" value="c" />
+                    <label>Cork</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q3" value="d" />
+                    <label>Wexford</label>
+                </P>
+            </div>
+
+            <div class="questions sportbg">
+                <p>4.What is the highest score in darts?</p>
+                <P>
+                    <input type="radio" name="q4" value="a" />
+                    <label>164</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q4" value="b" />
+                    <label>170</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q4" value="c" />
+                    <label>180</label>
+                </P>
+
+                <P>
+                    <input type="radio" name="q4" value="d" />
+                    <label>190</label>
+                </P>
+            </div>
+        </form>
+        <button type="submit" class="blue-button">Submit</button>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
