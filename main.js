@@ -10,7 +10,7 @@ let btn = document.querySelector('.blue-button')
 let geogQuiz = document.querySelector('.geog');
 let historyQuiz = document.querySelector('.hist');
 let sportQuiz = document.querySelector('.sport');
-let filmQuiz = dicument.querySelector('.film')
+let filmQuiz = document.querySelector('.film')
 
 let geogQuizForm = document.getElementById('geog-quiz');
 let histQuizForm = document.getElementById('hist-quiz');
