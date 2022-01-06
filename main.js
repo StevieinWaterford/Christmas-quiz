@@ -1,7 +1,7 @@
-let geogAnswers = ['b', 'a', 'a', 'd'];
-let histAnswers = ['b', 'a', 'c', 'b'];
-let sportAnswers = ['c', 'a', 'a', 'c'];
-let filmAnswers = ['b', 'a', 'd', 'a'];
+let geogAnswers = ['b', 'a', 'a', 'd', 'e'];
+let histAnswers = ['b', 'a', 'c', 'b', 'd'];
+let sportAnswers = ['c', 'a', 'a', 'c', 'e'];
+let filmAnswers = ['b', 'a', 'd', 'b', 'e'];
 
 let result = document.querySelector('.results-area');
 let displayPercentage = document.querySelector('.displayPercentage');
@@ -10,7 +10,7 @@ let btn = document.querySelector('.blue-button')
 let geogQuiz = document.querySelector('.geog');
 let historyQuiz = document.querySelector('.hist');
 let sportQuiz = document.querySelector('.sport');
-let filmQuiz = document.querySelector('.film')
+let filmQuiz = document.querySelector('.film');
 
 let geogQuizForm = document.getElementById('geog-quiz');
 let histQuizForm = document.getElementById('hist-quiz');
@@ -33,7 +33,7 @@ historyQuiz.addEventListener('click', event => {
 sportQuiz.addEventListener('click', event => {
     geogQuiz.classList.remove("underline");
     historyQuiz.classList.remove("underline");
-    filmQuiz.class.remove("underline");
+    filmQuiz.classList.remove("underline");
     sportQuiz.classList.add("underline");
     geogQuizForm.style.display = "none";
     histQuizForm.style.display = "none";
@@ -55,12 +55,12 @@ geogQuiz.addEventListener('click', event => {
 filmQuiz.addEventListener('click', event => {
     geogQuiz.classList.remove("underline");
     sportQuiz.classList.remove("underline");
-    filmQuiz.classList.remove("underline");
-    historyQuiz.classList.add("underline");
+    historyQuiz.classList.remove("underline");
+    filmQuiz.classList.add("underline");
     geogQuizForm.style.display = "none";
     sportQuizForm.style.display = "none";
-    filmQuizForm.style.display = "none";
-    histQuizForm.style.display = "block";
+    histQuizForm.style.display = "none";
+    filmQuizForm.style.display = "block";
 })
 
 
@@ -74,28 +74,28 @@ btn.addEventListener('click', (e) => {
     let sans = 0;
     let fans = 0;
     let total = 0;
-    let selectedGAnswers = [geogQuizForm.q1.value, geogQuizForm.q2.value, geogQuizForm.q3.value, geogQuizForm.q4.value]
+    let selectedGAnswers = [geogQuizForm.q1.value, geogQuizForm.q2.value, geogQuizForm.q3.value, geogQuizForm.q4.value, geogQuizForm.q5.value]
 
     selectedGAnswers.forEach((answer, index) => {
         if (answer === geogAnswers[index])
             gans += 1;
     })
 
-    let selectedHAnswers = [histQuizForm.q1.value, histQuizForm.q2.value, histQuizForm.q3.value, histQuizForm.q4.value]
+    let selectedHAnswers = [histQuizForm.q1.value, histQuizForm.q2.value, histQuizForm.q3.value, histQuizForm.q4.value, histQuizForm.q5.value]
 
     selectedHAnswers.forEach((answer, index) => {
         if (answer === histAnswers[index])
             hans += 1;
     })
 
-    let selectedSAnswers = [sportQuizForm.q1.value, sportQuizForm.q2.value, sportQuizForm.q3.value, sportQuizForm.q4.value]
+    let selectedSAnswers = [sportQuizForm.q1.value, sportQuizForm.q2.value, sportQuizForm.q3.value, sportQuizForm.q4.value, sportQuizForm.q5.value]
 
     selectedSAnswers.forEach((answer, index) => {
         if (answer === sportAnswers[index])
             sans += 1;
     })
 
-    let selectedFAnswers = [filmQuizForm.q1.value, filmQuizForm.q2.value, filmQuizForm.q3.value, filmQuizForm.q4.value]
+    let selectedFAnswers = [filmQuizForm.q1.value, filmQuizForm.q2.value, filmQuizForm.q3.value, filmQuizForm.q4.value, filmQuizForm.q5.value]
 
     selectedFAnswers.forEach((answer, index) => {
         if (answer === filmAnswers[index])

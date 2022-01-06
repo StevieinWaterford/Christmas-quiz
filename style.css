@@ -1,4 +1,4 @@
- *,  
+ 
 *::before, *::after {
     box-sizing: border-box;
     font-family: Gotham Rounded;
@@ -60,7 +60,7 @@
       font-size: 1rem;
   }
 
-  .results-area {
+.results-area {
       background-color: cornflowerblue;
       padding: 1px;
   
